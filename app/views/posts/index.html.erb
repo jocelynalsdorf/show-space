@@ -5,7 +5,9 @@
 
 		<div class="col-lg-6">
 		  <% @posts.each do |post| %>
-		     <p><%= link_to post.title, post_path(post) %></p>
+		   <%= link_to(image_tag post.image.url(:small))  %>
+		   <p><%= link_to post.title, post_path(post) %></p>
+
 		  <% end %>
 			<p><%= link_to "Add New Post", new_post_path %></p>
 		</div><!-- end of col 6 -->

@@ -1,6 +1,6 @@
 <% content_for :title, "Space Show | New Post" %>
 
-
+<%= image_tag @post.image.url(:medium) %>
 <h1><%= @post.title %></h1>
 <p><%= @post.link %></p>
 <p><%= @post.description %></p>
