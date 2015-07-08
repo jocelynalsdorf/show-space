@@ -4,6 +4,7 @@
 <h1><%= @post.title %></h1>
 <p><%= @post.link %></p>
 <p><%= @post.description %></p>
+<p>By: <%= @post.user.name %></p>
 
 <p><%= link_to "Edit", edit_post_path(@post) %></p>
 <p><%= link_to "Delete", post_path(@post), method: 
