@@ -7,6 +7,7 @@
 		  <% @posts.each do |post| %>
 		   <%= link_to(image_tag post.image.url(:small))  %>
 		   <p><%= link_to post.title, post_path(post) %></p>
+		   <P><%= post.comments.count%> Comments</P>
 
 		  <% end %>
 			<p><%= link_to "Add New Post", new_post_path %></p>
