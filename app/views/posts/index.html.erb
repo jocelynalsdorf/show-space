@@ -1,0 +1,17 @@
+<% content_for :title, "Space Show | New Post" %>
+
+<div class="container">
+	<div class="row">
+
+		<div class="col-lg-6">
+		  <% @posts.each do |post| %>
+		     <p><%= link_to post.title, post_path(post) %></p>
+		  <% end %>
+			<p><%= link_to "Add New Post", new_post_path %></p>
+		</div><!-- end of col 6 -->
+
+		<div class="col-lg-6">
+
+		</div>
+	</div><!-- end of col 6 -->
+</div><!-- end of main container -->
