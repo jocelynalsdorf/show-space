@@ -1,14 +1,30 @@
 {
   "RSpec": {
     "coverage": {
-      "/Users/jossthemac/Desktop/space-show/spec/models/post_spec.rb": [
+      "/Users/jossthemac/Desktop/space-show/spec/features/add_new_post_pages_spec.rb": [
         1,
         null,
         1,
-        2,
-        2,
-        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
         null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
         null,
         null,
         null
@@ -436,6 +452,11 @@
       "/Users/jossthemac/Desktop/space-show/spec/factories.rb": [
         1,
         null,
+        1,
+        1,
+        1,
+        1,
+        null,
         null
       ],
       "/Users/jossthemac/Desktop/space-show/config/routes.rb": [
@@ -453,6 +474,18 @@
         1,
         null
       ],
+      "/Users/jossthemac/Desktop/space-show/spec/models/post_spec.rb": [
+        1,
+        null,
+        1,
+        2,
+        2,
+        2,
+        null,
+        null,
+        null,
+        null
+      ],
       "/Users/jossthemac/Desktop/space-show/app/models/post.rb": [
         1,
         null,
@@ -460,8 +493,70 @@
         1,
         1,
         null
+      ],
+      "/Users/jossthemac/Desktop/space-show/app/controllers/posts_controller.rb": [
+        1,
+        1,
+        null,
+        1,
+        2,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        2,
+        null,
+        null,
+        1,
+        2,
+        null,
+        2,
+        1,
+        null,
+        1,
+        null,
+        null,
+        null,
+        1,
+        null,
+        null,
+        1,
+        0,
+        0,
+        null,
+        0,
+        null,
+        null,
+        null,
+        1,
+        0,
+        0,
+        null,
+        null,
+        1,
+        null,
+        1,
+        1,
+        null,
+        null,
+        null,
+        1,
+        2,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/Users/jossthemac/Desktop/space-show/app/controllers/application_controller.rb": [
+        1,
+        null,
+        null,
+        1,
+        null
       ]
     },
-    "timestamp": 1436382764
+    "timestamp": 1436383797
   }
 }
