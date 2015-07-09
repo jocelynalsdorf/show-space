@@ -8,29 +8,29 @@
 		<h2 class="post-title"><%= @post.title %></h2>
 		<p class="post-link"><%= @post.link %></p>
 		<p class="post-description"><%= @post.description %></p>
-		<p>By: <%= @post.user.name %></p>
-		<p><%= @post.get_upvotes.size %>  <span class="glyphicon glyphicon-thumbs-up"></span> <%= link_to "Like this Posting", like_post_path(@post), method: :get %></p>
-		<p><%= @post.get_downvotes.size%> <span class="glyphicon glyphicon-thumbs-down"></span> </p>
+		<p class="post-user">Posted By: <span class="fancy-text"><%= @post.user.name %></span></p>
 
+		<p class="post-like"><%= @post.get_upvotes.size %>  <span class="glyphicon glyphicon-thumbs-up"></span> <span class="like-text"><%= link_to "Like this Posting", like_post_path(@post), method: :get %></span></p>
+		<p class="post-like"><%= @post.get_downvotes.size%> <span class="glyphicon glyphicon-thumbs-down"></span> <span class="like-text"> <%=link_to "Dislike this Posting", dislike_post_path(@post), method: :get %></span></p>
 
+	
+		
 		<% if (@post.user == current_user) || (current_user && current_user.admin?) %>
 			<p><%= link_to "Edit", edit_post_path(@post) %></p>
 			<p><%= link_to "Delete", post_path(@post), method: 
 													:delete, data: {confirm: "Are you sure?"} %></p>
 		<% end %>
-			<p><%= link_to "home", root_path %></p>
-
-
+				<p class="home-link"><%= link_to "home", root_path %></p>
 			<div id="comment">
-				
-				<h2 class="comment-count"><%= pluralize(@post.comments.count, "Comment") %></h2>
+				<h3 class="comment-count"><%= pluralize(@post.comments.count, "Comment") %></h3>
 				<% @comments.each do |comment| %>
 				<p class="comment-name"><%= comment.user.name %></p>
 				<p><%= link_to comment.content, post_comment_path(@post, comment) %></p>
 				<% end %>
 				<%= render 'comments/form' %>
-
 			</div>
+
+	
 
 		</div><!-- end of col-10 -->
 	<div class="col-lg-1"></div>
