@@ -1,9 +1,14 @@
 require 'rails_helper'
+include Warden::Test::Helpers
+Warden.test_mode!
+
 
 describe "the add a post process" do
-  it "adds a new post" do
-    post = FactoryGirl.build(:post)
-    visit root_path
+  it "adds a new post" do  
+    visit posts_path
+    user = FactoryGirl.create(:user)
+    login_as(user, :scope => :user)
+    post = FactoryGirl.create(:post)
     click_link 'Add New Post'
     fill_in 'Title', :with => post.title
     fill_in 'Link', :with => post.link
@@ -13,8 +18,10 @@ describe "the add a post process" do
   end
 
   it "gives an error when no data is entered into form fields" do
-    post = FactoryGirl.build(:post)
-    visit root_path
+    visit posts_path
+    user = FactoryGirl.create(:user)
+    login_as(user, :scope => :user)
+    post = FactoryGirl.create(:post)
     click_link 'Add New Post'
     fill_in 'Title', :with => ''
     fill_in 'Link', :with => ''
