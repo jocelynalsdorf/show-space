@@ -22,9 +22,34 @@ ul {
 	list-style: none;
 }
 
+.navbar-default {
+	background-color: #EFEFEF;
+
+}
 .session-info {
 	display: inline-block;
   padding-top: 15px;
   padding-left: 10px;
 
 }
+.col-lg-4 p {
+	display:inline-block;
+	padding-top: 15px;
+	text-align: center;
+
+}
+
+.col-lg-4 {
+	text-align: center;
+	padding-top: 30px
+}
+
+.jumbotron.container {
+	max-width: 100%
+}
+
+.jumbotron {
+  padding-top: 48px;
+  padding-bottom: 48px;
+  background-color: #fff;
+  }
