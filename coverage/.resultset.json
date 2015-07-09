@@ -888,6 +888,26 @@
         null,
         null
       ],
+      "/Users/jossthemac/Desktop/space-show/spec/features/sign_up_user_pages_spec.rb": [
+        1,
+        1,
+        1,
+        null,
+        null,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        null,
+        null,
+        null
+      ],
       "/Users/jossthemac/Desktop/space-show/spec/models/comment_spec.rb": [
         1,
         null,
@@ -944,7 +964,7 @@
         1,
         null,
         1,
-        8,
+        10,
         null,
         null,
         1,
@@ -1021,8 +1041,8 @@
         1,
         null,
         1,
-        0,
-        0,
+        2,
+        2,
         null,
         null,
         null
@@ -1056,6 +1076,6 @@
         null
       ]
     },
-    "timestamp": 1436460477
+    "timestamp": 1436461321
   }
 }
