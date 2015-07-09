@@ -37,6 +37,7 @@ before_action :authenticate_user!, except: [:index, :show]
 
 	def destroy
 		@post.destroy
+		
 		redirect_to root_path
 	end
 
