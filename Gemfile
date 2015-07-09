@@ -15,6 +15,7 @@ gem 'simple_form', '~> 3.0.2'
 gem 'devise', '~> 3.4.1'
 gem 'acts_as_votable', '~> 0.10.0'
 gem 'paperclip', '~> 4.2.0'
+gem 'rails_12factor'
 
 group :development do
   gem 'byebug'
@@ -34,3 +35,5 @@ group :test do
   gem "factory_girl_rails", "~> 4.0"
   gem 'simplecov', require: false
 end
+
+ruby "2.2.0"

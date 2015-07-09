@@ -6,14 +6,14 @@
 <p><%= @post.description %></p>
 <p>By: <%= @post.user.name %></p>
 <p><%= @post.get_upvotes.size %>  <span class="glyphicon glyphicon-thumbs-up"></span> <%= link_to "Like this Posting", like_post_path(@post), method: :get %></p>
-<p><%= @post.get_downvotes.size%> <span class="glyphicon glyphicon-thumbs-down"></span> <%= link_to "Dislike this Posting",dislike_post_path(@post), method: :get %> </p>
+<p><%= @post.get_downvotes.size%> <span class="glyphicon glyphicon-thumbs-down"></span> </p>
 
 
 
 
 
 
-<% if @post.user == current_user  %>
+<% if (@post.user == current_user) || (current_user && current_user.admin?) %>
 	<p><%= link_to "Edit", edit_post_path(@post) %></p>
 	<p><%= link_to "Delete", post_path(@post), method: 
 											:delete, data: {confirm: "Are you sure?"} %></p>

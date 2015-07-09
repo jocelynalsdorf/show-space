@@ -14,27 +14,27 @@
       <img src="./assets/0.10.0/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2015-07-09T14:02:54-07:00">2015-07-09T14:02:54-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2015-07-09T15:39:04-07:00">2015-07-09T15:39:04-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
         <div class="file_list_container" id="AllFiles">
   <h2>
     <span class="group_name">All Files</span>
-    (<span class="covered_percent"><span class="green">96.87%</span></span>
+    (<span class="covered_percent"><span class="green">96.3%</span></span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.35
+         1.34
        </span>
     </span> hits/line)
   </h2>
   <a name="AllFiles"></a>
   <div>
-    <b>36</b> files in total.
-    <b>415</b> relevant lines. 
-    <span class="green"><b>402</b> lines covered</span> and
-    <span class="red"><b>13</b> lines missed </span>
+    <b>37</b> files in total.
+    <b>432</b> relevant lines. 
+    <span class="green"><b>416</b> lines covered</span> and
+    <span class="red"><b>16</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -57,7 +57,7 @@
         <td>7</td>
         <td>7</td>
         <td>0</td>
-        <td>1.3</td>
+        <td>2.1</td>
       </tr>
       
       <tr>
@@ -72,12 +72,12 @@
       
       <tr>
         <td class="strong"><a href="#fe7f91ad2e30976432c598357476e569de843438" class="src_link" title="app/controllers/posts_controller.rb">app/controllers/posts_controller.rb</a></td>
-        <td class="yellow strong">87.88 %</td>
-        <td>63</td>
-        <td>33</td>
-        <td>29</td>
-        <td>4</td>
-        <td>3.7</td>
+        <td class="yellow strong">85.71 %</td>
+        <td>68</td>
+        <td>35</td>
+        <td>30</td>
+        <td>5</td>
+        <td>3.5</td>
       </tr>
       
       <tr>
@@ -273,9 +273,9 @@
       <tr>
         <td class="strong"><a href="#8c49329eeeee855686380a6ac1d9649e65378f5a" class="src_link" title="config/routes.rb">config/routes.rb</a></td>
         <td class="green strong">100.0 %</td>
-        <td>15</td>
-        <td>8</td>
-        <td>8</td>
+        <td>20</td>
+        <td>10</td>
+        <td>10</td>
         <td>0</td>
         <td>1.0</td>
       </tr>
@@ -308,6 +308,16 @@
         <td>26</td>
         <td>0</td>
         <td>1.0</td>
+      </tr>
+      
+      <tr>
+        <td class="strong"><a href="#eb3357656e316aafb2e6efbf8f9efecde88d63d4" class="src_link" title="spec/features/admin_pages_spec.rb">spec/features/admin_pages_spec.rb</a></td>
+        <td class="yellow strong">84.62 %</td>
+        <td>31</td>
+        <td>13</td>
+        <td>11</td>
+        <td>2</td>
+        <td>0.8</td>
       </tr>
       
       <tr>
@@ -500,14 +510,14 @@
           <code class="ruby">	def configure_permitted_parameters</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="11">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="5" data-linenumber="11">
+          <span class="hits">5</span>
           
           <code class="ruby">	  devise_parameter_sanitizer.for(:sign_up) &lt;&lt; :name</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="12">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="5" data-linenumber="12">
+          <span class="hits">5</span>
           
           <code class="ruby">	  devise_parameter_sanitizer.for(:account_update) &lt;&lt; :name</code>
         </li>
@@ -861,11 +871,11 @@
         <div class="source_table" id="fe7f91ad2e30976432c598357476e569de843438">
   <div class="header">
     <h3>app/controllers/posts_controller.rb</h3>
-    <h4><span class="yellow">87.88 %</span> covered</h4>
+    <h4><span class="yellow">85.71 %</span> covered</h4>
     <div>
-      <b>33</b> relevant lines. 
-      <span class="green"><b>29</b> lines covered</span> and
-      <span class="red"><b>4</b> lines missed.</span>
+      <b>35</b> relevant lines. 
+      <span class="green"><b>30</b> lines covered</span> and
+      <span class="red"><b>5</b> lines missed.</span>
     </div>
   </div>
   
@@ -902,8 +912,8 @@
           <code class="ruby">	def index</code>
         </li>
       
-        <li class="covered" data-hits="14" data-linenumber="6">
-          <span class="hits">14</span>
+        <li class="covered" data-hits="15" data-linenumber="6">
+          <span class="hits">15</span>
           
           <code class="ruby">		@posts = Post.all.order(&quot;created_at DESC&quot;)</code>
         </li>
@@ -1187,64 +1197,94 @@
         <li class="covered" data-hits="1" data-linenumber="53">
           <span class="hits">1</span>
           
-          <code class="ruby">private</code>
+          <code class="ruby">	def all</code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="54">
+        <li class="missed" data-hits="0" data-linenumber="54">
+          
+          
+          <code class="ruby">		@posts = Post.all</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="55">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="55">
-          <span class="hits">1</span>
+        <li class="never" data-hits="" data-linenumber="56">
           
-          <code class="ruby">	def find_post</code>
-        </li>
-      
-        <li class="covered" data-hits="20" data-linenumber="56">
-          <span class="hits">20</span>
           
-          <code class="ruby">			@post = Post.find(params[:id])</code>
+          <code class="ruby">	end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="57">
           
           
-          <code class="ruby">	end</code>
+          <code class="ruby"></code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="58">
+        <li class="covered" data-hits="1" data-linenumber="58">
+          <span class="hits">1</span>
+          
+          <code class="ruby">private</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="59">
           
           
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="59">
+        <li class="covered" data-hits="1" data-linenumber="60">
           <span class="hits">1</span>
           
-          <code class="ruby">	def post_params</code>
+          <code class="ruby">	def find_post</code>
         </li>
       
-        <li class="covered" data-hits="12" data-linenumber="60">
-          <span class="hits">12</span>
+        <li class="covered" data-hits="20" data-linenumber="61">
+          <span class="hits">20</span>
           
-          <code class="ruby">		params.require(:post).permit(:title, :link, :description, :image)</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="61">
-          
-          
-          <code class="ruby">	end</code>
+          <code class="ruby">			@post = Post.find(params[:id])</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="62">
           
           
-          <code class="ruby"></code>
+          <code class="ruby">	end</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="63">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="64">
+          <span class="hits">1</span>
+          
+          <code class="ruby">	def post_params</code>
+        </li>
+      
+        <li class="covered" data-hits="12" data-linenumber="65">
+          <span class="hits">12</span>
+          
+          <code class="ruby">		params.require(:post).permit(:title, :link, :description, :image)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="66">
+          
+          
+          <code class="ruby">	end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="67">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="68">
           
           
           <code class="ruby">end</code>
@@ -5393,8 +5433,8 @@
     <h3>config/routes.rb</h3>
     <h4><span class="green">100.0 %</span> covered</h4>
     <div>
-      <b>8</b> relevant lines. 
-      <span class="green"><b>8</b> lines covered</span> and
+      <b>10</b> relevant lines. 
+      <span class="green"><b>10</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
   </div>
@@ -5438,55 +5478,85 @@
           <code class="ruby">  	member do</code>
         </li>
       
-        <li class="covered" data-hits="1" data-linenumber="7">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  		get &quot;like&quot;, to: &quot;posts#upvote&quot;</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="8">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  		get &quot;dislike&quot;, to: &quot;posts#downvote&quot;</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="9">
-          
-          
-          <code class="ruby">  	end</code>
-        </li>
-      
-        <li class="covered" data-hits="1" data-linenumber="10">
-          <span class="hits">1</span>
-          
-          <code class="ruby">  	resources :comments</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="11">
-          
-          
-          <code class="ruby">  end</code>
-        </li>
-      
-        <li class="never" data-hits="" data-linenumber="12">
+        <li class="never" data-hits="" data-linenumber="7">
           
           
           <code class="ruby"></code>
         </li>
       
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  		get &quot;like&quot;, to: &quot;posts#upvote&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="9">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  		get &quot;dislike&quot;, to: &quot;posts#downvote&quot;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="10">
+          
+          
+          <code class="ruby">  	end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="11">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="12">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  	collection do</code>
+        </li>
+      
         <li class="covered" data-hits="1" data-linenumber="13">
           <span class="hits">1</span>
           
-          <code class="ruby">  root to: &#39;posts#index&#39;</code>
+          <code class="ruby">  		get &#39;all&#39;</code>
         </li>
       
         <li class="never" data-hits="" data-linenumber="14">
           
           
+          <code class="ruby">  	end</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="15">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  	resources :comments</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="18">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  root to: &#39;posts#index&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
+          
+          
           <code class="ruby"> </code>
         </li>
       
-        <li class="never" data-hits="" data-linenumber="15">
+        <li class="never" data-hits="" data-linenumber="20">
           
           
           <code class="ruby">end</code>
@@ -6111,6 +6181,210 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="33">
+          
+          
+          <code class="ruby">end</code>
+        </li>
+      
+    </ol>
+  </pre>
+</div>
+      
+        <div class="source_table" id="eb3357656e316aafb2e6efbf8f9efecde88d63d4">
+  <div class="header">
+    <h3>spec/features/admin_pages_spec.rb</h3>
+    <h4><span class="yellow">84.62 %</span> covered</h4>
+    <div>
+      <b>13</b> relevant lines. 
+      <span class="green"><b>11</b> lines covered</span> and
+      <span class="red"><b>2</b> lines missed.</span>
+    </div>
+  </div>
+  
+  <pre>
+    <ol>
+      
+        <li class="covered" data-hits="1" data-linenumber="1">
+          <span class="hits">1</span>
+          
+          <code class="ruby">require &#39;rails_helper&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="2">
+          <span class="hits">1</span>
+          
+          <code class="ruby">include Warden::Test::Helpers</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="3">
+          <span class="hits">1</span>
+          
+          <code class="ruby">Warden.test_mode!</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="4">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="5">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="6">
+          <span class="hits">1</span>
+          
+          <code class="ruby">describe &quot;the admin view process&quot; do</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="7">
+          <span class="hits">1</span>
+          
+          <code class="ruby">  it &quot;allows admin functions&quot; do  </code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="8">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    visit posts_path</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="9">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    click_link &quot;Sign in&quot;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="10">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    fill_in &#39;Email&#39;, :with =&gt; &#39;joc@test.com&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="11">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    fill_in &#39;Password&#39;, :with =&gt; &#39;12345678&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="12">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    click_on &#39;Log in&#39;</code>
+        </li>
+      
+        <li class="covered" data-hits="1" data-linenumber="13">
+          <span class="hits">1</span>
+          
+          <code class="ruby">    expect(page).to have_content &#39;Welcome Jocelyn, our favorite and only admin!&#39;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="14">
+          
+          
+          <code class="ruby">    click_link &#39;See Admin Page&#39;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="15">
+          
+          
+          <code class="ruby">    expect(page).to have_content &#39;Hello there, boss lady!&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="16">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="17">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="18">
+          
+          
+          <code class="ruby">  # it &quot;gives an error when no data is entered into form fields&quot; do</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="19">
+          
+          
+          <code class="ruby">  #   visit posts_path</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="20">
+          
+          
+          <code class="ruby">  #   user = FactoryGirl.create(:user)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="21">
+          
+          
+          <code class="ruby">  #   login_as(user, :scope =&gt; :user)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="22">
+          
+          
+          <code class="ruby">  #   post = FactoryGirl.create(:post)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="23">
+          
+          
+          <code class="ruby">  #   click_link &#39;Add New Post&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="24">
+          
+          
+          <code class="ruby">  #   fill_in &#39;Title&#39;, :with =&gt; &#39;&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="25">
+          
+          
+          <code class="ruby">  #   fill_in &#39;Link&#39;, :with =&gt; &#39;&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="26">
+          
+          
+          <code class="ruby">  #   fill_in &#39;Description&#39;, :with =&gt; &#39;&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="27">
+          
+          
+          <code class="ruby">  #   click_on &#39;Create Post&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="28">
+          
+          
+          <code class="ruby">  #   expect(page).to have_content &#39;errors&#39;</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="29">
+          
+          
+          <code class="ruby">  # end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="30">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="31">
           
           
           <code class="ruby">end</code>
