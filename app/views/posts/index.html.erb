@@ -8,6 +8,8 @@
 			<% if current_user && current_user.admin? %>
 			<h4>Welcome Jocelyn, our favorite and only admin!</h4>
 			<%= link_to "See Admin Page", all_posts_path %>
+			<% else %>
+			<h4>Welcome <%= current_user.name %>!</h4>
 			<% end %>
 			</div>
 		</div>

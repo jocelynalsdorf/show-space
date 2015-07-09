@@ -1,6 +1,7 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import url(http://fonts.googleapis.com/css?family=Roboto:500,400,300,100);
+@import url(http://fonts.googleapis.com/css?family=Lobster+Two);
 
 
 
@@ -68,3 +69,30 @@ ul {
 .glyphicon-thumbs-up {
 font-size: 15px;
   }
+
+ .navbar-default .navbar-brand {
+	 font-family: 'Lobster Two', cursive;
+	 font-size: 30px;
+	 color: tomato;
+ }
+ .post-title {
+	 font-family: 'Lobster Two', cursive;
+	 font-size: 47px;
+	 color: tomato;
+	 text-align: center;
+	 padding-top: 10px;
+ }
+
+ .post-link {
+ text-align: center;
+ }
+
+.post-img.center-block {
+  padding-top: 20px;
+  }
+
+.post-description {
+	padding-left: 30px;
+	padding-right: 30px;
+	text-align: justify;
+}
