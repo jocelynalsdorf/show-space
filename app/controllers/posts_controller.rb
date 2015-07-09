@@ -37,7 +37,6 @@ before_action :authenticate_user!, except: [:index, :show]
 
 	def destroy
 		@post.destroy
-		
 		redirect_to root_path
 	end
 
@@ -51,20 +50,14 @@ before_action :authenticate_user!, except: [:index, :show]
 		redirect_to :back
 	end
 
-
-
-
-
 private
 
 	def find_post
 			@post = Post.find(params[:id])
-
 	end
 
 	def post_params
 		params.require(:post).permit(:title, :link, :description, :image)
 	end
-
 
 end

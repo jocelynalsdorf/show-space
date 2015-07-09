@@ -14,21 +14,21 @@
 
 
 <% if @post.user == current_user  %>
-<p><%= link_to "Edit", edit_post_path(@post) %></p>
-<p><%= link_to "Delete", post_path(@post), method: 
-										:delete, data: {confirm: "Are you sure?"} %></p>
+	<p><%= link_to "Edit", edit_post_path(@post) %></p>
+	<p><%= link_to "Delete", post_path(@post), method: 
+											:delete, data: {confirm: "Are you sure?"} %></p>
 <% end %>
-<p><%= link_to "home", root_path %></p>
+	<p><%= link_to "home", root_path %></p>
 
 
 <div id="comment">
 	
-<h2 class="comment-count"><%= pluralize(@post.comments.count, "Comment") %></h2>
-<% @comments.each do |comment| %>
-<p class="comment-name"><%= comment.user.name %></p>
-<p><%= link_to comment.content, post_comment_path(@post, comment) %></p>
-<% end %>
-<%= render 'comments/form' %>
+	<h2 class="comment-count"><%= pluralize(@post.comments.count, "Comment") %></h2>
+	<% @comments.each do |comment| %>
+	<p class="comment-name"><%= comment.user.name %></p>
+	<p><%= link_to comment.content, post_comment_path(@post, comment) %></p>
+	<% end %>
+	<%= render 'comments/form' %>
 
 </div>
 

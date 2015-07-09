@@ -9,13 +9,11 @@
 		   <p><%= link_to post.title, post_path(post) %></p>
 		   <P><%= post.comments.count%> Comments</P>
 		   <P><%= post.get_likes.size%> Likes</P>
-
 		  <% end %>
+
 			<p><%= link_to "Add Post", new_post_path %></p>
 		</div><!-- end of col 6 -->
 
-		<div class="col-lg-6">
-
-		</div>
+		<div class="col-lg-6"></div>
 	</div><!-- end of col 6 -->
 </div><!-- end of main container -->
