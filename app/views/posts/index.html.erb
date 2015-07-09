@@ -20,7 +20,7 @@
 		   <%= link_to(image_tag post.image.url(:small))  %>
 		   <p><%= link_to post.title, post_path(post) %></p>
 		   <P><%= post.comments.count%> Comments</P>
-		   <P><%= post.get_likes.size%> Likes</P>
+		   <P><%= post.get_likes.size%>  <span class="glyphicon glyphicon-thumbs-up"></span></P>
 		   </div>
 		  <% end %>
 			
