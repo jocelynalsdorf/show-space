@@ -6,4 +6,13 @@ class User < ActiveRecord::Base
 
   has_many :posts
   has_many :comments
+  before_create :make_admin_user
+
+  private
+
+  def make_admin_user 
+  	if self.name == "jocelyn alsdorf"
+  		self.admin = 'true'
+  	end
+  end
 end
