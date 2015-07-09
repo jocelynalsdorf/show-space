@@ -44,12 +44,24 @@ ul {
 	padding-top: 30px
 }
 
-.jumbotron.container {
-	max-width: 100%
+.jumbotron .container {
+	max-width: 100%;
+	margin: 0;
 }
 
 .jumbotron {
+	margin-top:10px;
   padding-top: 48px;
   padding-bottom: 48px;
   background-color: #fff;
   }
+
+.center-block {
+  text-align:center;
+  }
+
+  .left-block p {
+  text-align: left;
+  }
+
+  

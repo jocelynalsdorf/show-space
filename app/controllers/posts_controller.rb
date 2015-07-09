@@ -50,6 +50,11 @@ before_action :authenticate_user!, except: [:index, :show]
 		redirect_to :back
 	end
 
+	def all
+		@posts = Post.all
+
+	end
+
 private
 
 	def find_post

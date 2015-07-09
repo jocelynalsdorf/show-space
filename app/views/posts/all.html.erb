@@ -1,0 +1,13 @@
+<div class="row">
+<div class="col-lg-3"></div>
+	<div class="col-lg-6 center-block well">
+		<h2>Admin Page</h2>
+		<h3>Hello there, boss lady!</h3>
+		<p>View all current posts, users, and comments</p>
+		<div class="left-block">
+		<% @posts.each do |post| %>
+		<p class="all-user-list"><strong>User</strong> <%= post.user.name %> <strong>wrote: </strong><%= post.title %> <strong>on: </strong> <%= post.created_at.strftime('%b %d, %Y')%></p>
+		<% end %>
+	</div>
+	<div class="col-lg-3"></div>
+</div>
