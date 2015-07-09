@@ -1,0 +1,10 @@
+<% content_for :title, "Space Show | Comment" %>
+
+<%= @comment.content %>
+	<% if @comment.user == current_user  %>
+<p><%= link_to "Edit", edit_post_comment_path(@post, @comment) %></p>
+<p><%= link_to "Delete My Comment", post_comment_path(@post, @comment), method: 
+										:delete, data: {confirm: "Are you sure?"} %></p>
+
+<% end %>
+<p><%= link_to "home", root_path %></p>

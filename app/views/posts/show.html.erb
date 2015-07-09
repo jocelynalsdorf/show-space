@@ -26,8 +26,9 @@
 <h2 class="comment-count"><%= pluralize(@post.comments.count, "Comment") %></h2>
 <% @comments.each do |comment| %>
 <p class="comment-name"><%= comment.user.name %></p>
-<p class="comment-content"><%= comment.content %></p>
+<p><%= link_to comment.content, post_comment_path(@post, comment) %></p>
 <% end %>
 <%= render 'comments/form' %>
 
 </div>
+
